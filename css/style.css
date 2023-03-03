@@ -1,9 +1,8 @@
 body {
-  background-image: url("../assets/ink-paint.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../assets/Buddha.png") no-repeat top center fixed;
+  background-size: auto 100%;
+  background-attachment: fixed;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@ body {
   left: 0;
   right: 0;
   height: 50px;
-  background-color: #333;
+  background-color: #625c54;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -31,6 +30,7 @@ body {
   bottom: 50px;
   width: 200px;
   background-color: #eee;
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 10px;
   overflow-y: auto;
   /* 设置滚动条 */
@@ -41,18 +41,24 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .sidebar li {
   margin-bottom: 10px;
 }
+
 .sidebar ul li a {
-  text-decoration: none; /* 去除下划线 */
+  text-decoration: none;
+  /* 去除下划线 */
   color: black;
 }
 
 /* 主内容样式 */
 .main {
+  background-color: #eee;
+  background-color: rgba(255, 255, 255, 0.8);
   margin-top: 50px;
   margin-left: 220px;
+  margin-bottom: 50px;
   /* 让主内容区域向右偏移200px，避免被左侧目录遮挡 */
   padding: 20px;
 }
@@ -64,7 +70,7 @@ body {
   left: 0;
   right: 0;
   height: 50px;
-  background-color: #333;
+  background-color: #625c54;
   color: #fff;
   display: flex;
   justify-content: center;
